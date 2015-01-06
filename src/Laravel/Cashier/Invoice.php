@@ -45,6 +45,16 @@ class Invoice {
 	}
 
 	/**
+	 * Get the display invoice number based on the users requirements
+	 * 
+	 * @return string
+	 */
+	public function invoiceNumber()
+	{
+		return $this->id;
+	}
+	
+	/**
 	 * Get the total amount for the line item in dollars.
 	 *
 	 * @return string
