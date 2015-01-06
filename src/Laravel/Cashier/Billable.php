@@ -516,5 +516,15 @@ trait Billable {
 	{
 		static::$stripeKey = $key;
 	}
+	
+	/**
+     	* The field on the Laravel\Cashier\Invoice object used as the invoice number
+     	* 
+     	* @return string
+     	*/
+	public function getInvoiceNumberSource()
+    	{
+        	return 'id';
+    	}
 
 }
